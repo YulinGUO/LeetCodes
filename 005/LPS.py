@@ -47,7 +47,7 @@ class LPS(object):
 
         for ti, tj in pals:
             print('---------------------------')
-            print('begin ti %r tj %r' % (ti,tj))
+            print('begin ti %r tj %r' % (ti, tj))
             if maxLen < tj - ti + 1:
                 print('first maxLen %r' % maxLen)
                 maxI = ti
@@ -60,7 +60,7 @@ class LPS(object):
                     print('same added')
                     ti -= 1
                     tj += 1
-                    print(' ti %r  tj %r' % (ti,tj))
+                    print(' ti %r  tj %r' % (ti, tj))
                 else:
                     break
             ti += 1
@@ -70,13 +70,12 @@ class LPS(object):
                 maxJ = tj
                 maxLen = tj - ti + 1
 
-        return s[maxI:maxJ+1]
+        return s[maxI:maxJ + 1]
 
 
 def main():
     lps = LPS()
     print(lps.longestPalindrome('ababababa'))
-
 
 
 if __name__ == '__main__':
