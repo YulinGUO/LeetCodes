@@ -36,8 +36,8 @@ class PL(object):
                 while i <= j:
                     j = max(j, sappaers.get(S[i]))
                     i += 1
-                cnt.append(j+1-lst)
-                lst = j+1
+                cnt.append(j + 1 - lst)
+                lst = j + 1
 
         return cnt
 
@@ -45,6 +45,7 @@ class PL(object):
 def main():
     pl = PL()
     print(pl.partitionLabels("ababcbacadefegdehijhklij"))
+
 
 if __name__ == '__main__':
     main()
