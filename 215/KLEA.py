@@ -52,7 +52,7 @@ class KLEA(object):
         i = 0
         j = len(nums) - 1
         quickSort(nums, i, j)
-        # print(nums)
+        print(nums)
         return nums[k - 1]
 
         # quick sort functions
