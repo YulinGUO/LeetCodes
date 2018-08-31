@@ -29,13 +29,6 @@ class MKSL(object):
         """
         amount = len(lists)
 
-    def mergeKLists(self, lists):
-        """
-        :type lists: List[ListNode]
-        :rtype: ListNode
-        """
-        amount = len(lists)
-
         skip = 1
 
         while skip < amount:
